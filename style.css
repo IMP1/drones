@@ -1,0 +1,152 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+.centred {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+a {
+    color: rgba(0, 0, 0, 0.8);
+}
+a:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#map {
+    height: 480px;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+#map > i {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+}
+
+#prevButton, #nextButton {
+    width: 4em;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 6em;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.4em;
+}
+
+#prevButton:hover, #nextButton:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+#prevButton:active, #nextButton:active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#prevButton {
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#nextButton {
+    text-align: left;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#timeline {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#line {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.specificInfo {
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 0.5em;
+    margin-top: 2em;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+}
+
+#firstDate, #lastDate {
+    margin-top: 0;
+    display: inline-block;
+}
+
+#firstDate {
+    float: left;
+}
+
+#lastDate {
+    float: right;
+}
+
+footer {
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+footer a {
+    color: rgba(0, 0, 0, 0.6);
+}
+footer a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+ul#credits {
+    list-style: none outside none;
+}
+
+ul#credits li {
+    display: inline-block;
+}   
+
+ul#credits li:first-child:before {
+    display: none;
+}
+ul#credits li:before {
+    padding: 0px 0.75em;
+    display: inline;
+    content: "•";
+    opacity: 0.5;
+}
+
+.centered {
+    text-align: center;
+}
