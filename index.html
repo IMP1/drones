@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Covert US Drone Strikes</title>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="https://i.imgur.com/ToqPqzg.png">
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="http://openlayers.org/en/v3.0.0/css/ol.css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="http://openlayers.org/en/v3.0.0/build/ol.js"></script>
+	</head>
+	<body>
+		<h1><span id="strike-count"></span> Covert US Drone Strikes</h1>
+        <div class="centred">Total deaths are thought to be between <span id="min-deaths"><i class="fa fa-spinner fa-pulse"></i></span> and <span id="max-deaths"><i class="fa fa-spinner fa-pulse"></i></span>. At least <span id="civ-deaths"><i class="fa fa-spinner fa-pulse"></i></span> of these have been confirmed to be civilians.</div>
+        <div id="map"><i class="fa fa-spinner fa-4x fa-pulse"></i></div>
+        <div id="timeline">
+            <div id="line"></div>
+            <span id="firstDate"><i class="fa fa-spinner fa-pulse"></i></span>
+            <span id="lastDate"><i class="fa fa-spinner fa-pulse"></i></span>
+        </div>
+        <section class="centered">
+            <div id="prevButton" onclick="showPreviousStrike()">Previous</div>
+            <div id="strikeInfo" class="specificInfo">
+                <h3 id="strikeTitle"></h3>
+                <p id="strikeBody">Click on a Strike to see more info.</p>
+                <h4><a id="strikeLink"></a></h4>
+            </div>
+            <div id="nextButton" onclick="showNextStrike()">Next</div>
+        </section>
+        <footer>
+            <ul id="credits">
+                <li>Drone Strike Data from <a href="http://dronestre.am/">Dronestream</a>.</li>
+                <li>Map tiles courtesy of <a href="http://www.mapquest.com/">MapQuest</a>.</li>
+                <li><a href="https://www.google.com/fonts/specimen/Cinzel">Cinzel</a> and <a href="https://www.google.com/fonts/specimen/Lora">Lora</a> fonts from <a href="https://www.google.com/fonts">Google Fonts</a>.</li>
+            </ul>
+        </footer>
+        <script type="text/javascript" src="map-stuff.js"></script>
+	</body>
+</html>
