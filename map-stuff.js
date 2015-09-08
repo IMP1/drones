@@ -48,7 +48,8 @@ var showInfo = function(strikeID) {
     document.getElementById("strikeLink").href = strike.bij_link;
     document.getElementById("strikeLink").innerHTML = "The Bureau of Investigative Journalism Article";
     document.getElementById("strikeBody").innerHTML = strike.bij_summary_short;
-    document.getElementById("strikeTitle").innerHTML = (strike.town ? strike.town + ", " : "") + strike.country + ". " + strike.date.split("T")[0];
+    document.getElementById("strikeTitle").innerHTML = (strike.town ? strike.town + ", " : "") + strike.country + "<br>" + strike.date.split("T")[0];
+    document.getElementById("line").innerHTML = strike.date.split("T")[0];
 };
 
 /*
