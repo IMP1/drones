@@ -13,25 +13,28 @@
 	<body>
 		<h1><span id="strike-count"></span> Covert US Drone Strikes</h1>
         <div class="centred">Total deaths are thought to be between <span id="min-deaths"><i class="fa fa-spinner fa-pulse"></i></span> and <span id="max-deaths"><i class="fa fa-spinner fa-pulse"></i></span>. At least <span id="civ-deaths"><i class="fa fa-spinner fa-pulse"></i></span> of these have been confirmed to be civilians.</div>
-        <div id="map"><i class="fa fa-spinner fa-4x fa-pulse"></i></div>
-        <div id="timeline">
-            <div id="line"></div>
-            <span id="firstDate"><i class="fa fa-spinner fa-pulse"></i></span>
-            <span id="lastDate"><i class="fa fa-spinner fa-pulse"></i></span>
-        </div>
-        <section class="centered">
-            <div id="prevButton" onclick="showPreviousStrike()">Previous</div>
-            <div id="strikeInfo" class="specificInfo">
+        <section id="mapContainer">
+            <div id="map"><i class="fa fa-spinner fa-4x fa-pulse"></i></div>
+            <div id="timeline">
+                <div id="line"></div>
+                <span id="firstDate"><i class="fa fa-spinner fa-pulse"></i></span>
+                <span id="lastDate"><i class="fa fa-spinner fa-pulse"></i></span>
+            </div>
+        </section>
+        <section id="infoContainer" class="centered">
+            <section id="specificInfo">
                 <h3 id="strikeTitle"></h3>
                 <p id="strikeBody">Click on a Strike to see more info.</p>
-                <h4><a id="strikeLink"></a></h4>
-            </div>
+                <a id="strikeLink"></a>
+            </section>
+            <div id="prevButton" onclick="showPreviousStrike()">Previous</div>
             <div id="nextButton" onclick="showNextStrike()">Next</div>
         </section>
         <footer>
             <ul id="credits">
                 <li>Drone Strike Data from <a href="http://dronestre.am/">Dronestream</a>.</li>
                 <li>Map tiles courtesy of <a href="http://www.mapquest.com/">MapQuest</a>.</li>
+                <li>Website source on <a href="https://github.com/IMP1/drones/tree/gh-pages">Github</a>.</li>
             </ul>
         </footer>
         <script type="text/javascript" src="map-stuff.js"></script>
