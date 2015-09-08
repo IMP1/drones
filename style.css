@@ -67,7 +67,7 @@ a:hover {
 }
 
 #prevButton, #nextButton {
-    width: 4em;
+    width: 6rem;
     display: inline-block;
     vertical-align: top;
     margin-top: 2rem;
@@ -110,8 +110,10 @@ a:hover {
 }
 
 #specificInfo {
+    height: 320px;
     border: 1px solid black;
     padding: 0.5rem;
+    position: relative;
 }
 
 #strikeInfo {
@@ -122,6 +124,14 @@ a:hover {
     margin-left: 2rem;
     margin-right: 2rem;
     display: inline-block;
+}
+
+#strikeLink {
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center;
 }
 
 #firstDate, #lastDate {
