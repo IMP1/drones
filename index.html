@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Covert US Drone Strikes</title>
-		<meta charset="utf-8">
-		<link rel="icon" type="image/png" href="https://i.imgur.com/ToqPqzg.png">
-        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link type="text/css" rel="stylesheet" href="http://openlayers.org/en/v3.0.0/css/ol.css">
-        <link type="text/css" rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="http://openlayers.org/en/v3.0.0/build/ol.js"></script>
-	</head>
-	<body>
-		<h1><span id="strike-count"></span> Covert US Drone Strikes</h1>
-        <div class="centred">Total deaths are thought to be between <span id="min-deaths"><i class="fa fa-spinner fa-pulse"></i></span> and <span id="max-deaths"><i class="fa fa-spinner fa-pulse"></i></span>. At least <span id="civ-deaths"><i class="fa fa-spinner fa-pulse"></i></span> of these have been confirmed to be civilians.</div>
-        <section id="mapContainer">
-            <div id="map"><i class="fa fa-spinner fa-4x fa-pulse"></i></div>
-            <div id="timeline">
-                <div id="line"></div>
-                <span id="firstDate"><i class="fa fa-spinner fa-pulse"></i></span>
-                <span id="lastDate"><i class="fa fa-spinner fa-pulse"></i></span>
-            </div>
-        </section>
-        <section id="infoContainer" class="centered">
-            <section id="specificInfo">
-                <h3 id="strikeTitle"></h3>
-                <p id="strikeBody">Click on a Strike to see more info.</p>
-                <a id="strikeLink"></a>
-            </section>
-            <button type="button" id="prevButton" onclick="showPreviousStrike()">Previous</button>
-            <button type="button" id="nextButton" onclick="showNextStrike()">Next</button>
-        </section>
-        <footer>
-            <ul id="credits">
-                <li>Drone Strike Data from <a href="http://dronestre.am/">Dronestream</a>.</li>
-                <li>Map tiles courtesy of <a href="http://www.mapquest.com/">MapQuest</a>.</li>
-                <li>Website source on <a href="https://github.com/IMP1/drones/tree/gh-pages">Github</a>.</li>
-            </ul>
-        </footer>
-        <script type="text/javascript" src="map-stuff.js"></script>
-	</body>
+<head>
+	<title>Covert US Drone Strikes</title>
+
+	<meta charset="utf-8">
+
+	<link rel="icon" type="image/png" 
+          href="https://i.imgur.com/ToqPqzg.png">
+    <link type="text/css" rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" 
+          href="http://openlayers.org/en/v3.0.0/css/ol.css">
+    <link type="text/css" rel="stylesheet" 
+          href="style.css">
+
+    <script type="text/javascript" 
+            src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" 
+            src="http://openlayers.org/en/v3.0.0/build/ol.js"></script>
+</head>
+<body>
+	<h1><span id="strike-count"></span> Covert US Drone Strikes</h1>
+
+    <section id="blurb">
+        <p>
+
+        </p>    
+        <p id="minor-stats" style="display: none;">
+            Total deaths are thought to be between <span id="min-deaths"></span> and
+            <span id="max-deaths"></span>. At least <span id="civ-deaths"></span> of 
+            these have been confirmed to be civilians.
+        </p>
+    </section>
+
+    <section id="intro-nav">
+        <a href="map.html">Map of Drone Strikes</a>
+        <a href="stats.html">Drone Strike Statistics</a>
+    </section>
+
+    <footer>
+        <ul id="credits">
+            <li>Drone Strike Data from <a href="http://dronestre.am/">Dronestream</a>.</li>
+            <li>Map tiles courtesy of <a href="http://www.mapquest.com/">MapQuest</a>.</li>
+            <li>Website source on <a href="https://github.com/IMP1/drones/tree/gh-pages">Github</a>.</li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" 
+            src="index-setup.js"></script>
+</body>
 </html>
