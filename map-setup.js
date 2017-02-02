@@ -84,6 +84,8 @@ $.ajax({
             source: new ol.source.OSM()
         });
 
+        $('map-loading-spinner').remove();
+
         map = new ol.Map({
             layers: [raster, clusters],
             target: 'map',
@@ -92,9 +94,6 @@ $.ajax({
                 zoom: 3
             })
         });
-
-        $('map-loading-spinner').remove();
-
     }
 });
 
