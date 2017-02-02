@@ -93,6 +93,8 @@ $.ajax({
             })
         });
 
+        $('map-loading-spinner').remove();
+
     }
 });
 

@@ -2,6 +2,8 @@
 <head>
     <title>Covert US Drone Strikes</title>
 
+    <meta charset="utf-8">
+
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css"
@@ -9,9 +11,9 @@
     <link rel="stylesheet" type="text/css"
           href="/resources/demos/style.css">
     <link rel="stylesheet" type="text/css"
-          href="https://openlayers.org/en/v3.20.1/css/ol.css" >
+          href="https://openlayers.org/en/v3.20.1/css/ol.css">
     <link rel="stylesheet" type="text/css"
-          href="style.css" >
+          href="style.css">
 
     <script type="text/javascript"
             src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -25,8 +27,12 @@
 <body>
     <h1><span id="strike-count"></span> Covert US Drone Strikes</h1>
 
+
+
     <section id="map-section">
-        <div id="map" class="map"></div>
+        <div id="map" class="map">
+            <i id="map-loading-spinner" class="fa fa-spinner fa-pulse">FOOBAR</i>
+        </div>
     </section>
 
     <script type="text/javascript"
