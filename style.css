@@ -29,6 +29,20 @@ a:hover {
     Index Page
 */
 
+#intro-nav {
+    text-align: center;
+}
+
+#intro-nav > a {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+#timeline > .year {
+    width: 100%;
+}
+
 footer {
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
