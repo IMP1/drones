@@ -36,7 +36,7 @@ $.ajax({
             if (!(year in years)) {
                 years[year] = $('<svg id="year-' + year + '"class="year"></svg>');
             }
-            $(years[year]).append('<circle cx="' + (itemDate.getDOY() / (itemDate.isLeapYear() ? 366 : 365)) + '%" cy="50%" r="100"/>');
+            $(years[year]).append('<circle cx="' + (100 * itemDate.getDOY() / (itemDate.isLeapYear() ? 366 : 365)) + '%" cy="50%" r="100"/>');
 
             // Update first and last dates.
             if (firstDate == null || itemDate < firstDate) {
