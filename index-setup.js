@@ -34,9 +34,10 @@ $.ajax({
             // Add to the year it happened in.
             var year = itemDate.getFullYear();
             if (!(year in years)) {
-                years[year] = $('<svg id="year-' + year + '"class="year"></svg>');
+                years[year] = $('<svg id="year-' + year + '"class="year" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"></svg>');
+                $(years[year]).append('<line x1="0" y1="50" x2="100" y2="50" stroke="#444444">');
             }
-            $(years[year]).append('<circle cx="' + (100 * itemDate.getDOY() / (itemDate.isLeapYear() ? 366 : 365)) + '%" cy="50%" r="100"/>');
+            $(years[year]).append('<circle cx="' + (100 * itemDate.getDOY() / (itemDate.isLeapYear() ? 366 : 365)) + '" cy="50" r="10"/>');
 
             // Update first and last dates.
             if (firstDate == null || itemDate < firstDate) {
@@ -58,7 +59,7 @@ $.ajax({
 
         $('#timeline').show();
 
-        $('#strike-count').innerHTML = strikeData.length;
+        $('#strike-count').innerHTML = data.strike.length;
 
         $('#min-deaths').innerHTML = minimumDeathCount;
         $('#max-deaths').innerHTML = maximumDeathCount;
