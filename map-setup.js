@@ -1,5 +1,5 @@
 
-var DISTANCE = 10;
+var DISTANCE = 32;
 var map;
 var features;
 var strikeLayer;
@@ -59,12 +59,12 @@ $.ajax({
                 if (!style) {
                     style = new ol.style.Style({
                         image: new ol.style.Circle({
-                            radius: 10,
+                            radius: DISTANCE / 2,
                             stroke: new ol.style.Stroke({
                                 color: '#fff'
                             }),
                             fill: new ol.style.Fill({
-                                color: '#3399CC'
+                                color: 'rgba(48,128,192,0.6)'
                             })
                         }),
                         text: new ol.style.Text({
