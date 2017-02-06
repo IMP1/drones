@@ -84,7 +84,7 @@ $.ajax({
             source: new ol.source.OSM()
         });
 
-        $('map-loading-spinner').remove();
+        $('#map-loading-spinner').remove();
 
         map = new ol.Map({
             layers: [raster, clusters],
